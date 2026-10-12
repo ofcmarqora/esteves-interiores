@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design de Interiores Residenciais com Render 3D | Esteves Interiores — São Paulo</title>
+<link rel="icon" href="assets/logo-favicon.webp" type="image/webp">
+<meta name="description" content="Projeto de interiores residenciais com render 3D realista, detalhamento técnico e acompanhamento da obra. Veja o ambiente pronto antes de executar. Peça seu orçamento pelo WhatsApp.">
+<meta name="keywords" content="design de interiores residenciais, projeto de interiores São Paulo, render 3D realista, projeto executivo, interiores de apartamentos">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Esteves Interiores — Ambientes pensados em cada detalhe antes de existirem">
+<meta property="og:description" content="Design de interiores residenciais com render 3D realista e projeto executivo. Aprove tudo antes da obra.">
+<meta name="theme-color" content="#221f1b">
+<meta name="author" content="Pamela Esteves — Esteves Interiores">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Esteves Interiores">
+<meta property="og:image" content="assets/embedded-01.webp">
+<meta property="og:image:alt" content="Projeto de interiores da Esteves Interiores">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Esteves Interiores — Design de interiores residenciais">
+<meta name="twitter:description" content="Ambientes pensados em cada detalhe antes de existirem.">
+<meta name="twitter:image" content="assets/embedded-01.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Esteves Interiores","description":"Design de interiores residenciais, render 3D e projeto executivo.","founder":{"@type":"Person","name":"Pamela Esteves"},"email":"comercial.estevesinteriores@gmail.com","telephone":"+5511959364993","areaServed":"São Paulo e região","sameAs":["https://www.instagram.com/esteves_interiores"]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quanto custa um projeto de interiores?", "acceptedAnswer": {"@type": "Answer", "text": "O valor depende da metragem, da quantidade de ambientes e do plano escolhido. Por isso o orçamento é feito sob medida: chame no WhatsApp, conte sobre o seu espaço e receba a proposta sem compromisso."}}, {"@type": "Question", "name": "Em quanto tempo o projeto fica pronto?", "acceptedAnswer": {"@type": "Answer", "text": "O prazo varia conforme o plano e o tamanho do espaço. Ele é combinado com você na proposta, antes de qualquer contratação."}}, {"@type": "Question", "name": "Qual plano é o ideal para mim?", "acceptedAnswer": {"@type": "Answer", "text": "Para o projeto completo, com nossa equipe cuidando dos orçamentos e acompanhando a obra, o Premium. Se você prefere orçar com seus próprios fornecedores, o Plus. Para resolver um cômodo, com ou sem reforma, o Interiores Express. E se só precisa da imagem realista, o Render 3D. Na dúvida, conte seu caso no WhatsApp e indicamos o melhor caminho."}}, {"@type": "Question", "name": "Vocês atendem fora de São Paulo?", "acceptedAnswer": {"@type": "Answer", "text": "O atendimento é em São Paulo e região. Se você está em outra localidade, chame no WhatsApp que avaliamos o seu caso."}}]}
+</script>
+<style>
+:root{--ink:#221f1b;--ink-soft:#4a453d;--parchment:#efe8da;--cream:#f6f1e7;--stone:#d8cfbd;--stone-deep:#c4b89f;--moss:#5f6b4a;--moss-deep:#4a5439;--clay:#a95a37;--brass:#a9895c;--line:rgba(239,232,218,.16)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--parchment);color:var(--ink);font-family:'Manrope',sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.serif{font-family:'Fraunces',serif;font-weight:400;letter-spacing:-.01em}
+a{color:inherit}img,video{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+@media(max-width:640px){.wrap{padding:0 20px}}
+.eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);margin-bottom:18px}
+.btn{display:inline-block;text-decoration:none;font-size:.92rem;font-weight:600;padding:14px 28px;border-radius:999px;border:1px solid transparent;cursor:pointer;transition:background .25s,transform .25s,color .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--clay);color:#fff}.btn-primary:hover{background:#8f4a2b}
+.btn-ghost{border-color:currentColor}.btn-ghost:hover{background:rgba(127,127,127,.12)}
+.btn-row{display:flex;gap:14px;flex-wrap:wrap}
+.sec-title{font-size:clamp(1.9rem,3.6vw,2.8rem);font-weight:300;line-height:1.15;max-width:20ch}
+.sec-lead{color:var(--ink-soft);max-width:54ch;margin-top:16px}
+.section{padding:104px 0}
+@media(max-width:640px){.section{padding:68px 0}}
+.center{text-align:center}.center .sec-title,.center .sec-lead{margin-left:auto;margin-right:auto}
+
+/* NAV */
+header{position:sticky;top:0;z-index:50;background:rgba(239,232,218,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(34,31,27,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 32px;max-width:1200px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:11px;font-family:'Fraunces',serif;font-size:1.15rem;text-decoration:none}
+.brand-mark{width:32px;height:32px;border:1px solid var(--brass);display:flex;align-items:center;justify-content:center;font-size:.95rem;line-height:1}
+.mono-e{color:var(--moss);margin-right:-2px}.mono-i{color:var(--brass);font-style:italic}
+.brand span.n{color:var(--moss)}
+.nav-links{display:flex;gap:32px;font-size:.9rem}
+.nav-links a{text-decoration:none;position:relative}
+.nav-links a:after{content:'';position:absolute;left:0;bottom:-4px;width:0;height:1px;background:var(--ink);transition:width .25s}
+.nav-links a:hover:after{width:100%}
+.nav-right{display:flex;align-items:center;gap:14px}
+.nav-cta{font-size:.84rem;padding:10px 20px}
+.nav-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:32px;height:32px;background:none;border:none;cursor:pointer}
+.nav-toggle span{display:block;width:100%;height:1px;background:var(--ink)}
+.nav-mobile{display:none;flex-direction:column;border-top:1px solid rgba(34,31,27,.1)}
+.nav-mobile.open{display:flex}
+.nav-mobile a{padding:15px 24px;text-decoration:none;border-bottom:1px solid rgba(34,31,27,.08);font-size:.95rem}
+@media(max-width:860px){.nav-links{display:none}.nav-toggle{display:flex}.nav-cta{display:none}}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,#221f1b 0%,#2c2822 60%,#3a342a 100%);color:var(--parchment);overflow:hidden}
+.hero-inner{max-width:1200px;margin:0 auto;padding:88px 32px 96px;display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:44px;padding:60px 22px 64px}}
+.hero h1{font-size:clamp(2.4rem,5.2vw,4.1rem);line-height:1.06;font-weight:300;max-width:15ch}
+.hero h1 em{font-style:italic;color:var(--stone-deep)}
+.hero p.sub{color:var(--stone);max-width:46ch;margin:24px 0 34px;font-size:1.04rem}
+.hero .btn-ghost{color:var(--parchment)}
+.hero-proof{display:flex;gap:26px;flex-wrap:wrap;margin-top:40px;font-size:.84rem;color:var(--stone)}
+.hero-proof li{list-style:none;display:flex;gap:8px;align-items:center}
+.hero-proof li:before{content:'';width:6px;height:6px;border-radius:50%;background:var(--brass)}
+.hero-img{aspect-ratio:4/5;border-radius:180px 180px 6px 6px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+@media(max-width:900px){.hero-img{aspect-ratio:4/3;border-radius:120px 120px 6px 6px}}
+
+/* SOBRE */
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:center}
+@media(max-width:860px){.about{grid-template-columns:1fr;gap:36px}}
+.about-photo{aspect-ratio:4/5;border-radius:6px 6px 160px 6px;overflow:hidden;cursor:zoom-in}
+.about-photo img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.about-text p{color:var(--ink-soft);max-width:52ch;margin-top:18px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chips li{list-style:none;font-size:.84rem;padding:9px 16px;border-radius:999px;background:var(--cream);border:1px solid rgba(34,31,27,.1)}
+
+/* PLANOS */
+.plans{background:linear-gradient(180deg,var(--parchment) 0%,var(--stone) 14%,var(--stone) 100%)}
+.plan-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:52px}
+@media(max-width:820px){.plan-grid{grid-template-columns:1fr}}
+.plan{background:var(--cream);border-radius:10px;padding:36px 34px;display:flex;flex-direction:column;position:relative;transition:transform .3s,box-shadow .3s}
+.plan:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(34,31,27,.12)}
+.plan.hl{background:var(--ink);color:var(--parchment)}
+.plan .num{font-family:'Fraunces',serif;font-style:italic;color:var(--clay);font-size:1rem}
+.plan.hl .num{color:var(--brass)}
+.plan h3{font-size:1.6rem;font-weight:400;margin:8px 0 12px}
+.plan p{color:var(--ink-soft);font-size:.95rem;flex:1}
+.plan.hl p{color:var(--stone)}
+.plan .btn{margin-top:26px;align-self:flex-start}
+.badge{position:absolute;top:22px;right:24px;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brass)}
+
+/* PORTFOLIO */
+.gallery{columns:3 260px;column-gap:16px;margin-top:48px}
+.gallery figure{break-inside:avoid;margin-bottom:16px;position:relative;overflow:hidden;border-radius:6px;cursor:zoom-in}
+.gallery img{width:100%;height:auto;transition:transform .6s}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 16px 14px;color:var(--parchment);font-family:'Fraunces',serif;font-style:italic;font-size:.85rem;background:linear-gradient(to top,rgba(0,0,0,.6),transparent)}
+.lightbox{position:fixed;inset:0;z-index:200;background:rgba(20,18,15,.94);display:none;align-items:center;justify-content:center;padding:40px}
+.lightbox.open{display:flex}
+.lightbox img{max-height:86vh;border-radius:4px}
+.lb-btn{position:absolute;background:none;border:1px solid rgba(239,232,218,.4);color:var(--parchment);width:44px;height:44px;border-radius:50%;font-size:1.1rem;cursor:pointer}
+.lb-btn:hover{background:rgba(239,232,218,.12)}
+#lbClose{top:22px;right:22px}#lbPrev{left:18px}#lbNext{right:18px}
+.lb-cap{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:var(--stone);font-family:'Fraunces',serif;font-style:italic;font-size:.9rem}
+
+/* VIDEOS */
+.videos{background:var(--ink);color:var(--parchment)}
+.videos .sec-lead{color:var(--stone)}
+.vid-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:48px}
+@media(max-width:900px){.vid-grid{grid-template-columns:repeat(2,1fr)}}
+.vid-grid video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#17140f;border-radius:8px}
+
+/* PROCESSO */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:56px;counter-reset:s}
+@media(max-width:860px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+.step{counter-increment:s;padding-top:22px;border-top:1px solid rgba(34,31,27,.2);position:relative}
+.step:before{content:'0' counter(s);font-family:'Fraunces',serif;font-style:italic;color:var(--clay);font-size:1.1rem}
+.step h3{font-size:1.2rem;margin:8px 0 8px}
+.step p{font-size:.92rem;color:var(--ink-soft)}
+
+/* CONTATO */
+.contact-sec{background:linear-gradient(180deg,var(--parchment),var(--stone))}
+.contact{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
+@media(max-width:900px){.contact{grid-template-columns:1fr;gap:40px}}
+.contact h2{font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.12;max-width:14ch}
+.contact .lead{color:var(--ink-soft);max-width:44ch;margin:20px 0 30px}
+.c-info{margin-top:34px;display:grid;gap:10px;font-size:.92rem}
+.c-info a{text-decoration:none;border-bottom:1px solid transparent}.c-info a:hover{border-color:var(--ink)}
+.c-info b{font-weight:600;margin-right:6px}
+.form-panel{background:var(--ink);color:var(--parchment);border-radius:12px;padding:40px;display:flex;flex-direction:column;gap:18px}
+@media(max-width:560px){.form-panel{padding:28px 20px}}
+.form-panel h3{font-size:1.4rem;font-weight:300}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:560px){.form-row{grid-template-columns:1fr}}
+.f{display:flex;flex-direction:column;gap:7px}
+.f label{font-size:.78rem;color:var(--stone)}
+.f input,.f select,.f textarea{background:#33302a;border:1px solid var(--line);color:var(--parchment);padding:12px 14px;border-radius:6px;font-family:inherit;font-size:.92rem}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:var(--brass)}
+.f textarea{resize:vertical}
+
+/* FOOTER */
+footer{background:var(--ink);color:rgba(239,232,218,.65);padding:60px 0 0;font-size:.88rem}
+footer a{text-decoration:none}footer a:hover{color:var(--brass)}
+.foot-grid{display:grid;grid-template-columns:1.2fr .8fr 1.2fr;gap:40px;padding-bottom:44px}
+@media(max-width:860px){.foot-grid{grid-template-columns:1fr}}
+.foot-brand{font-family:'Fraunces',serif;font-size:1.1rem;color:var(--parchment);margin-bottom:14px}
+.foot-title{font-family:'Fraunces',serif;color:var(--parchment);margin-bottom:16px}
+.foot-list{display:flex;flex-direction:column;gap:11px}
+.foot-bottom{border-top:1px solid var(--line);padding:20px 0;font-size:.78rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;color:rgba(239,232,218,.45)}
+.wa-float{position:fixed;right:22px;bottom:22px;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.35);z-index:150;transition:transform .2s}
+.wa-float:hover{transform:scale(1.08)}
+
+/* INSTAGRAM */
+.ig{text-align:center}
+.ig-handle{font-family:'Fraunces',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:300;margin:6px 0 24px}
+.ig-handle a{text-decoration:none;border-bottom:1px solid var(--brass)}
+.ig-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:1000px;margin:0 auto 36px}
+@media(max-width:700px){.ig-grid{grid-template-columns:repeat(2,1fr)}}
+.ig-post{position:relative;display:block;aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:linear-gradient(135deg,var(--stone),var(--stone-deep));color:var(--ink-soft)}
+.ig-post .ig-ico{position:absolute;inset:0;margin:auto;transition:opacity .3s}
+.ig-post img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.ig-post:hover img{transform:scale(1.06)}
+.ig-post:after{content:'';position:absolute;inset:0;background:rgba(34,31,27,.0);transition:background .3s}
+.ig-post:hover:after{background:rgba(34,31,27,.25)}
+/* FAQ */
+.faq-list{max-width:800px;margin:48px auto 0}
+.faq-item{border-bottom:1px solid rgba(34,31,27,.18)}
+.faq-item summary{list-style:none;cursor:pointer;padding:22px 40px 22px 0;font-family:'Fraunces',serif;font-size:1.15rem;position:relative}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:after{content:'+';position:absolute;right:6px;top:50%;transform:translateY(-50%);font-size:1.5rem;color:var(--clay);transition:transform .3s}
+.faq-item[open] summary:after{transform:translateY(-50%) rotate(45deg)}
+.faq-item p{color:var(--ink-soft);padding:0 40px 24px 0;max-width:62ch}
+.faq-cta{text-align:center;margin-top:40px}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+  /* Logo oficial Esteves Interiores */
+  .brand-logo{display:block;width:190px;height:auto;max-height:42px;object-fit:contain;object-position:left center}
+  .foot-brand-logo{display:block;width:230px;height:auto;max-height:58px;object-fit:contain;object-position:left center;margin-bottom:16px}
+  @media(max-width:640px){.brand-logo{width:154px;max-height:36px}.foot-brand-logo{width:210px}}
+</style>
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+<!-- Quando o domínio final estiver definido, adicionar aqui: <link rel="canonical" href="https://SEU-DOMINIO/"> -->
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="#topo" aria-label="Esteves Interiores"><img class="brand-logo" src="assets/logo-esteves-interiores.webp" alt="Esteves Interiores"></a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#sobre">Sobre</a><a href="#planos">Planos</a><a href="#portfolio">Projetos</a><a href="#processo">Como funciona</a><a href="#contato">Contato</a>
+    </nav>
+    <div class="nav-right">
+      <a class="btn btn-primary nav-cta" href="https://wa.me/5511959364993?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20projeto%20de%20interiores." target="_blank" rel="noopener">Falar no WhatsApp</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="nav-mobile" id="navMobile" aria-label="Menu mobile">
+    <a href="#sobre">Sobre</a><a href="#planos">Planos</a><a href="#portfolio">Projetos</a><a href="#processo">Como funciona</a><a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main id="topo">
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <p class="eyebrow">Pamela Esteves · Design de Interiores Residenciais</p>
+      <h1>Ambientes <em>pensados em cada detalhe</em> antes de existirem.</h1>
+      <p class="sub">Projeto de interiores com render 3D realista: você enxerga, aprova e executa com segurança, sem surpresas e sem retrabalho na obra.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="https://wa.me/5511959364993?text=Ol%C3%A1!%20Quero%20come%C3%A7ar%20meu%20projeto%20de%20interiores." target="_blank" rel="noopener">Quero meu projeto</a>
+        <a class="btn btn-ghost" href="#portfolio">Ver projetos</a>
+      </div>
+      <ul class="hero-proof">
+        <li>Render 3D realista</li><li>Do layout à marcenaria</li><li>Atendimento em São Paulo &amp; região</li>
+      </ul>
+    </div>
+    <div class="hero-img"><img src="assets/embedded-01.webp" alt="Sala compacta com vista para a cidade, projeto de design de interiores da Esteves Interiores" fetchpriority="high"></div>
+  </div>
+</section>
+
+<section class="section" id="sobre">
+  <div class="wrap about">
+    <div class="about-photo reveal" data-lb><img src="assets/embedded-02.webp" alt="Pamela Esteves, designer de interiores à frente da Esteves Interiores" loading="lazy" decoding="async"></div>
+    <div class="about-text reveal">
+      <p class="eyebrow">Sobre</p>
+      <h2 class="sec-title">Cada projeto começa antes da obra, na tela e em detalhe real.</h2>
+      <p>A Esteves Interiores une design de interiores e visualização 3D para que você veja e aprove cada acabamento, cor e móvel antes de qualquer martelada. É esse cuidado com o realismo que guia o trabalho de Pamela Esteves.</p>
+      <p>Do apartamento compacto à casa completa, o processo é pensado para quem quer clareza: menos incerteza, mais decisão informada.</p>
+      <ul class="chips"><li>Projetos autorais</li><li>Render 3D em cada proposta</li><li>Acompanhamento próximo</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="section plans" id="planos">
+  <div class="wrap">
+    <div class="center reveal">
+      <p class="eyebrow">Planos</p>
+      <h2 class="sec-title">Como posso te ajudar</h2>
+      <p class="sec-lead">Escolha o formato ideal para o seu momento, da solução de um cômodo ao projeto completo com acompanhamento.</p>
+    </div>
+    <div class="plan-grid">
+      <article class="plan hl reveal">
+        <span class="badge">Mais completo</span>
+        <span class="num">01</span>
+        <h3>Projeto Premium</h3>
+        <p>Do layout à marcenaria: plantas, renderização, ambientação virtual, especificações, detalhamento técnico com orçamentos de fornecedores por nossa equipe e acompanhamento da execução.</p>
+        <a class="btn btn-primary" href="https://wa.me/5511959364993?text=Quero%20saber%20mais%20sobre%20o%20plano%20Projeto%20Premium" target="_blank" rel="noopener">Quero esse</a>
+      </article>
+      <article class="plan reveal">
+        <span class="num">02</span>
+        <h3>Projeto Plus</h3>
+        <p>Do layout à marcenaria: plantas, renderização, ambientação virtual, especificações e detalhamento técnico para orçar com seus fornecedores.</p>
+        <a class="btn btn-primary" href="https://wa.me/5511959364993?text=Quero%20saber%20mais%20sobre%20o%20plano%20Projeto%20Plus" target="_blank" rel="noopener">Quero esse</a>
+      </article>
+      <article class="plan reveal">
+        <span class="num">03</span>
+        <h3>Interiores Express</h3>
+        <p>Para quem tem um cômodo específico para resolver, com ou sem reforma, direcionamento rápido e objetivo.</p>
+        <a class="btn btn-primary" href="https://wa.me/5511959364993?text=Quero%20saber%20mais%20sobre%20o%20plano%20Interiores%20Express" target="_blank" rel="noopener">Quero esse</a>
+      </article>
+      <article class="plan reveal">
+        <span class="num">04</span>
+        <h3>Render 3D e Imagem realista</h3>
+        <p>Visualização fotorrealista de ambientes residenciais e comerciais, para apresentação, aprovação ou divulgação.</p>
+        <a class="btn btn-primary" href="https://wa.me/5511959364993?text=Quero%20saber%20mais%20sobre%20o%20plano%20Render%203D%20e%20Imagem%20realista" target="_blank" rel="noopener">Quero esse</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="portfolio">
+  <div class="wrap">
+    <div class="center reveal">
+      <p class="eyebrow">Projetos</p>
+      <h2 class="sec-title">Ambientes que já saíram do papel</h2>
+      <p class="sec-lead">Clique em qualquer foto para ampliar.</p>
+    </div>
+    <div class="gallery" id="gallery">
+      <figure class="reveal" data-lb><img src="assets/embedded-03.webp" alt="Sala de estar e jantar integrada com projeto de interiores" loading="lazy" decoding="async"><figcaption>Sala de estar e jantar integrada</figcaption></figure>
+      <figure class="reveal" data-lb><img src="assets/embedded-04.webp" alt="Painel de TV com credência planejada" loading="lazy" decoding="async"><figcaption>Painel de TV com credência</figcaption></figure>
+      <figure class="reveal" data-lb><img src="assets/embedded-05.webp" alt="Cantinho de jantar com banco planejado" loading="lazy" decoding="async"><figcaption>Cantinho de jantar com banco</figcaption></figure>
+      <figure class="reveal" data-lb><img src="assets/embedded-06.webp" alt="Copa com estante suspensa" loading="lazy" decoding="async"><figcaption>Copa com estante suspensa</figcaption></figure>
+      <figure class="reveal" data-lb><img src="assets/embedded-07.webp" alt="Corredor com armários planejados" loading="lazy" decoding="async"><figcaption>Corredor com armários planejados</figcaption></figure>
+      <figure class="reveal" data-lb><img src="assets/embedded-08.webp" alt="Cozinha integrada à sala" loading="lazy" decoding="async"><figcaption>Cozinha integrada à sala</figcaption></figure>
+      <figure class="reveal" data-lb><img src="assets/embedded-09.webp" alt="Cozinha compacta planejada" loading="lazy" decoding="async"><figcaption>Cozinha compacta</figcaption></figure>
+      <figure class="reveal" data-lb><img src="assets/embedded-10.webp" alt="Quarto gamer projetado sob medida" loading="lazy" decoding="async"><figcaption>Quarto gamer</figcaption></figure>
+      <!-- PARA ADICIONAR MAIS FOTOS (você tem 14): copie o bloco abaixo, ajuste src e legenda
+      <figure class="reveal" data-lb><img src="fotos/projeto-10.webp" alt="Ambiente residencial projetado pela Esteves Interiores" loading="lazy" decoding="async"><figcaption>Projeto residencial — Esteves Interiores</figcaption></figure>
+      -->
+    </div>
+  </div>
+</section>
+
+<section class="section videos" id="videos">
+  <div class="wrap">
+    <div class="center reveal">
+      <p class="eyebrow">Em movimento</p>
+      <h2 class="sec-title">Veja os projetos ganhando vida</h2>
+      <p class="sec-lead">Passeios pelos ambientes e bastidores dos projetos da Esteves Interiores.</p>
+    </div>
+    <div class="vid-grid">
+      <!-- Troque os caminhos pelos seus arquivos (MP4). Formato vertical (reels) recomendado. -->
+      <video class="reveal" controls preload="metadata" playsinline poster="assets/video-poster-1.svg" aria-label="Vídeo do projeto 1"><source src="videos/projeto-1.mp4" type="video/mp4">Seu navegador não suporta vídeos HTML5.</video>
+      <video class="reveal" controls preload="metadata" playsinline poster="assets/video-poster-2.svg" aria-label="Vídeo do projeto 2"><source src="videos/projeto-2.mp4" type="video/mp4">Seu navegador não suporta vídeos HTML5.</video>
+      <video class="reveal" controls preload="metadata" playsinline poster="assets/video-poster-3.svg" aria-label="Vídeo do projeto 3"><source src="videos/projeto-3.mp4" type="video/mp4">Seu navegador não suporta vídeos HTML5.</video>
+      <video class="reveal" controls preload="metadata" playsinline poster="assets/video-poster-4.svg" aria-label="Vídeo do projeto 4"><source src="videos/projeto-4.mp4" type="video/mp4">Seu navegador não suporta vídeos HTML5.</video>
+    </div>
+  </div>
+</section>
+
+<section class="section ig" id="instagram">
+  <div class="wrap reveal">
+    <p class="eyebrow">Instagram</p>
+    <h2 class="sec-title" style="margin:0 auto">Acompanhe os bastidores dos projetos</h2>
+    <p class="ig-handle"><a href="https://www.instagram.com/esteves_interiores" target="_blank" rel="noopener">@esteves_interiores</a></p>
+    <div class="ig-grid">
+      <!-- Para cada post: troque o href pelo link do post (https://www.instagram.com/p/CODIGO/) e coloque a imagem em instagram/post-N.jpg -->
+      <a class="ig-post" href="https://www.instagram.com/p/DYNIDnTEfV6/" target="_blank" rel="noopener" aria-label="Ver post 1 no Instagram"><svg class="ig-ico" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg><img src="instagram/post-1.webp" alt="Post 1 do Instagram da Esteves Interiores" loading="lazy" onerror="this.style.display='none'"></a>
+      <a class="ig-post" href="https://www.instagram.com/p/DUCAnFIEv8R/" target="_blank" rel="noopener" aria-label="Ver post 2 no Instagram"><svg class="ig-ico" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg><img src="instagram/post-2.webp" alt="Post 2 do Instagram da Esteves Interiores" loading="lazy" onerror="this.style.display='none'"></a>
+      <a class="ig-post" href="https://www.instagram.com/p/DOJoM2dEgOW/" target="_blank" rel="noopener" aria-label="Ver post 3 no Instagram"><svg class="ig-ico" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg><img src="instagram/post-3.webp" alt="Post 3 do Instagram da Esteves Interiores" loading="lazy" onerror="this.style.display='none'"></a>
+      <a class="ig-post" href="https://www.instagram.com/p/C4JHIoPvLni/" target="_blank" rel="noopener" aria-label="Ver post 4 no Instagram"><svg class="ig-ico" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg><img src="instagram/post-4.webp" alt="Post 4 do Instagram da Esteves Interiores" loading="lazy" onerror="this.style.display='none'"></a>
+    </div>
+    <a class="btn btn-primary" href="https://www.instagram.com/esteves_interiores" target="_blank" rel="noopener">Seguir no Instagram</a>
+  </div>
+</section>
+
+<section class="section" id="processo">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Processo</p>
+      <h2 class="sec-title">Como funciona</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Conversa inicial</h3><p>Entendemos o espaço, o estilo de vida e o que precisa mudar.</p></div>
+      <div class="step reveal"><h3>Layout &amp; conceito</h3><p>Definição funcional do ambiente e direção estética.</p></div>
+      <div class="step reveal"><h3>Render realista</h3><p>Você vê o resultado antes da obra começar, sem imaginar no escuro.</p></div>
+      <div class="step reveal"><h3>Projeto Executivo</h3><p>Detalhamentos que orientam a execução do projeto, garantindo precisão nas medidas, materiais e soluções.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="duvidas">
+  <div class="wrap">
+    <div class="center reveal">
+      <p class="eyebrow">Dúvidas</p>
+      <h2 class="sec-title">Perguntas frequentes</h2>
+      <p class="sec-lead">Tudo o que costumam perguntar antes de começar um projeto.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item reveal"><summary>Quanto custa um projeto de interiores?</summary><p>O valor depende da metragem, da quantidade de ambientes e do plano escolhido. Por isso o orçamento é feito sob medida: chame no WhatsApp, conte sobre o seu espaço e receba a proposta sem compromisso.</p></details>
+      <details class="faq-item reveal"><summary>Em quanto tempo o projeto fica pronto?</summary><p>O prazo varia conforme o plano e o tamanho do espaço. Ele é combinado com você na proposta, antes de qualquer contratação.</p></details>
+      <details class="faq-item reveal"><summary>Qual plano é o ideal para mim?</summary><p>Para o projeto completo, com nossa equipe cuidando dos orçamentos e acompanhando a obra, o Premium. Se você prefere orçar com seus próprios fornecedores, o Plus. Para resolver um cômodo, com ou sem reforma, o Interiores Express. E se só precisa da imagem realista, o Render 3D. Na dúvida, conte seu caso no WhatsApp e indicamos o melhor caminho.</p></details>
+      <details class="faq-item reveal"><summary>Vocês atendem fora de São Paulo?</summary><p>O atendimento é em São Paulo e região. Se você está em outra localidade, chame no WhatsApp que avaliamos o seu caso.</p></details>
+    </div>
+    <div class="faq-cta reveal"><a class="btn btn-primary" href="https://wa.me/5511959364993?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20projeto." target="_blank" rel="noopener">Ainda tem dúvida? Fale com a gente</a></div>
+  </div>
+</section>
+
+<section class="section contact-sec" id="contato">
+  <div class="wrap contact">
+    <div class="reveal">
+      <p class="eyebrow">Contato</p>
+      <h2>Vamos projetar o seu próximo ambiente?</h2>
+      <p class="lead">Conte um pouco sobre o espaço que você deseja transformar, seja sala, cozinha, quarto ou o imóvel completo. Entre em contato com a nossa equipe e vamos entender suas necessidades para encontrar a melhor solução para o seu projeto.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="https://wa.me/5511959364993" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/esteves_interiores" target="_blank" rel="noopener">Ver no Instagram</a>
+      </div>
+      <div class="c-info">
+        <div><b>Instagram</b><a href="https://www.instagram.com/esteves_interiores" target="_blank" rel="noopener">@esteves_interiores</a></div>
+        <div><b>E-mail</b><a href="mailto:comercial.estevesinteriores@gmail.com">comercial.estevesinteriores@gmail.com</a></div>
+        <div><b>Atuação</b>Design de interiores residenciais</div>
+      </div>
+    </div>
+    <form class="form-panel reveal" id="contactForm">
+      <h3>Prefere deixar seus dados?</h3>
+      <div class="form-row">
+        <div class="f"><label for="f-nome">Nome completo</label><input type="text" id="f-nome" placeholder="Seu nome" required></div>
+        <div class="f"><label for="f-tel">Telefone</label><input type="tel" id="f-tel" placeholder="(11) 90000-0000" required></div>
+      </div>
+      <div class="form-row">
+        <div class="f"><label for="f-email">E-mail</label><input type="email" id="f-email" placeholder="voce@email.com"></div>
+        <div class="f"><label for="f-servico">Plano de interesse</label>
+          <select id="f-servico">
+            <option>Projeto Premium</option><option>Projeto Plus</option><option>Interiores Express</option><option>Render 3D e Imagem realista</option><option>Ainda não sei / quero orientação</option>
+          </select></div>
+      </div>
+      <div class="f"><label for="f-msg">Mensagem</label><textarea id="f-msg" rows="4" placeholder="Conte um pouco do espaço que você quer transformar..."></textarea></div>
+      <button type="submit" class="btn btn-primary" style="align-self:flex-start">Enviar pelo WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <div class="foot-brand"><img class="foot-brand-logo" src="assets/logo-esteves-interiores.webp" alt="Esteves Interiores"></div>
+      <p style="max-width:34ch">Design de interiores residenciais e imagens 3D realistas, para você aprovar cada detalhe antes da obra começar.</p>
+    </div>
+    <div>
+      <div class="foot-title">Navegação</div>
+      <nav class="foot-list"><a href="#sobre">Sobre</a><a href="#planos">Planos</a><a href="#portfolio">Projetos</a><a href="#processo">Como funciona</a><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a></nav>
+    </div>
+    <div>
+      <div class="foot-title">Contato</div>
+      <div class="foot-list">
+        <a href="https://wa.me/5511959364993" target="_blank" rel="noopener">WhatsApp: (11) 95936-4993</a>
+        <a href="mailto:comercial.estevesinteriores@gmail.com">comercial.estevesinteriores@gmail.com</a>
+        <a href="https://www.instagram.com/esteves_interiores" target="_blank" rel="noopener">@esteves_interiores</a>
+        <span>Seg a Sex · 9h às 18h · Atendimento em São Paulo &amp; região</span>
+      </div>
+    </div>
+  </div>
+  <div class="wrap foot-bottom"><span>&copy; 2026 Esteves Interiores · Todos os direitos reservados</span><span>Pamela Esteves · Design de Interiores</span></div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5511959364993" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6"><path d="M12 21a9 9 0 1 0-7.7-4.4L3 21l4.6-1.2A9 9 0 0 0 12 21Z"/><path d="M8.5 9.3c0-.5.4-1 1-1h.6c.3 0 .5.2.6.4l.6 1.6c.1.2 0 .5-.1.6l-.5.6c-.2.2-.2.4-.1.6.4.8 1.5 1.9 2.3 2.3.2.1.4.1.6-.1l.6-.5c.2-.1.4-.2.6-.1l1.6.6c.2.1.4.3.4.6v.6c0 .6-.5 1-1 1-3.3 0-6.8-3.5-6.8-6.8Z"/></svg></a>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <button class="lb-btn" id="lbClose" aria-label="Fechar">&#10005;</button>
+  <button class="lb-btn" id="lbPrev" aria-label="Anterior">&#8249;</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-btn" id="lbNext" aria-label="Próxima">&#8250;</button>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+// Menu mobile
+const tg=$('#navToggle'),nm=$('#navMobile');
+tg.onclick=()=>{const o=nm.classList.toggle('open');tg.setAttribute('aria-expanded',o)};
+$$('#navMobile a').forEach(a=>a.onclick=()=>{nm.classList.remove('open');tg.setAttribute('aria-expanded','false')});
+// Lightbox com navegação
+const lb=$('#lightbox'),items=$$('[data-lb]');let cur=0;
+function show(i){cur=(i+items.length)%items.length;const im=items[cur].querySelector('img'),c=items[cur].querySelector('figcaption');
+ $('#lbImg').src=im.src;$('#lbImg').alt=im.alt;$('#lbCap').textContent=c?c.textContent:'';lb.classList.add('open');document.body.style.overflow='hidden'}
+function close(){lb.classList.remove('open');document.body.style.overflow=''}
+items.forEach((el,i)=>el.onclick=()=>show(i));
+$('#lbClose').onclick=close;$('#lbPrev').onclick=()=>show(cur-1);$('#lbNext').onclick=()=>show(cur+1);
+lb.onclick=e=>{if(e.target===lb)close()};
+document.onkeydown=e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)};
+// Revelar ao rolar
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -50px 0px'});
+$$('.reveal').forEach(el=>io.observe(el));
+// Formulário -> WhatsApp
+$('#contactForm').addEventListener('submit',e=>{e.preventDefault();
+ const v=id=>$('#'+id).value.trim();
+ let t=`Olá! Meu nome é ${v('f-nome')}.\nTelefone: ${v('f-tel')}`;
+ if(v('f-email'))t+=`\nE-mail: ${v('f-email')}`;
+ t+=`\nPlano de interesse: ${v('f-servico')}`;
+ if(v('f-msg'))t+=`\nMensagem: ${v('f-msg')}`;
+ window.open('https://wa.me/5511959364993?text='+encodeURIComponent(t),'_blank')});
+</script>
+</body>
+</html>
