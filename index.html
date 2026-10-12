@@ -28,9 +28,6 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"Esteves Interiores","description":"Design de interiores residenciais, render 3D e projeto executivo.","founder":{"@type":"Person","name":"Pamela Esteves"},"email":"comercial.estevesinteriores@gmail.com","telephone":"+5511959364993","areaServed":"São Paulo e região","sameAs":["https://www.instagram.com/esteves_interiores"]}
 </script>
-<script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quanto custa um projeto de interiores?", "acceptedAnswer": {"@type": "Answer", "text": "O valor depende da metragem, da quantidade de ambientes e do plano escolhido. Por isso o orçamento é feito sob medida: chame no WhatsApp, conte sobre o seu espaço e receba a proposta sem compromisso."}}, {"@type": "Question", "name": "Em quanto tempo o projeto fica pronto?", "acceptedAnswer": {"@type": "Answer", "text": "O prazo varia conforme o plano e o tamanho do espaço. Ele é combinado com você na proposta, antes de qualquer contratação."}}, {"@type": "Question", "name": "Qual plano é o ideal para mim?", "acceptedAnswer": {"@type": "Answer", "text": "Para o projeto completo, com nossa equipe cuidando dos orçamentos e acompanhando a obra, o Premium. Se você prefere orçar com seus próprios fornecedores, o Plus. Para resolver um cômodo, com ou sem reforma, o Interiores Express. E se só precisa da imagem realista, o Render 3D. Na dúvida, conte seu caso no WhatsApp e indicamos o melhor caminho."}}, {"@type": "Question", "name": "Vocês atendem fora de São Paulo?", "acceptedAnswer": {"@type": "Answer", "text": "O atendimento é em São Paulo e região. Se você está em outra localidade, chame no WhatsApp que avaliamos o seu caso."}}]}
-</script>
 <style>
 :root{--ink:#221f1b;--ink-soft:#4a453d;--parchment:#efe8da;--cream:#f6f1e7;--stone:#d8cfbd;--stone-deep:#c4b89f;--moss:#5f6b4a;--moss-deep:#4a5439;--clay:#a95a37;--brass:#a9895c;--line:rgba(239,232,218,.16)}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -185,15 +182,6 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass)}
 .ig-post:hover img{transform:scale(1.06)}
 .ig-post:after{content:'';position:absolute;inset:0;background:rgba(34,31,27,.0);transition:background .3s}
 .ig-post:hover:after{background:rgba(34,31,27,.25)}
-/* FAQ */
-.faq-list{max-width:800px;margin:48px auto 0}
-.faq-item{border-bottom:1px solid rgba(34,31,27,.18)}
-.faq-item summary{list-style:none;cursor:pointer;padding:22px 40px 22px 0;font-family:'Fraunces',serif;font-size:1.15rem;position:relative}
-.faq-item summary::-webkit-details-marker{display:none}
-.faq-item summary:after{content:'+';position:absolute;right:6px;top:50%;transform:translateY(-50%);font-size:1.5rem;color:var(--clay);transition:transform .3s}
-.faq-item[open] summary:after{transform:translateY(-50%) rotate(45deg)}
-.faq-item p{color:var(--ink-soft);padding:0 40px 24px 0;max-width:62ch}
-.faq-cta{text-align:center;margin-top:40px}
 
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
@@ -250,7 +238,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass)}
 
 <section class="section" id="sobre">
   <div class="wrap about">
-    <div class="about-photo reveal" data-lb><img src="Fotos/social2.webp" alt="Pamela Esteves, designer de interiores à frente da Esteves Interiores" loading="lazy" decoding="async"></div>
+    <div class="about-photo reveal" data-lb><img src="assets/pamela-esteves.webp" alt="Pamela Esteves, designer de interiores à frente da Esteves Interiores" loading="lazy" decoding="async"></div>
     <div class="about-text reveal">
       <p class="eyebrow">Sobre</p>
       <h2 class="sec-title">Cada projeto começa antes da obra, na tela e em detalhe real.</h2>
@@ -312,8 +300,6 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass)}
       <figure class="reveal" data-lb><img src="Fotos/projeto-04.webp" alt="Projeto de interiores residencial 04 da Esteves Interiores" loading="lazy" decoding="async"><figcaption>Projeto residencial 04</figcaption></figure>
       <figure class="reveal" data-lb><img src="Fotos/projeto-05.webp" alt="Projeto de interiores residencial 05 da Esteves Interiores" loading="lazy" decoding="async"><figcaption>Projeto residencial 05</figcaption></figure>
       <figure class="reveal" data-lb><img src="Fotos/projeto-06.webp" alt="Projeto de interiores residencial 06 da Esteves Interiores" loading="lazy" decoding="async"><figcaption>Projeto residencial 06</figcaption></figure>
-      <figure class="reveal" data-lb><img src="Fotos/projeto-07.webp" alt="Projeto de interiores residencial 07 da Esteves Interiores" loading="lazy" decoding="async"><figcaption>Projeto residencial 07</figcaption></figure>
-      <figure class="reveal" data-lb><img src="Fotos/projeto-08.webp" alt="Projeto de interiores residencial 08 da Esteves Interiores" loading="lazy" decoding="async"><figcaption>Projeto residencial 08</figcaption></figure>
     </div>
   </div>
 </section>
@@ -365,22 +351,6 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass)}
   </div>
 </section>
 
-<section class="section" id="duvidas">
-  <div class="wrap">
-    <div class="center reveal">
-      <p class="eyebrow">Dúvidas</p>
-      <h2 class="sec-title">Perguntas frequentes</h2>
-      <p class="sec-lead">Tudo o que costumam perguntar antes de começar um projeto.</p>
-    </div>
-    <div class="faq-list">
-      <details class="faq-item reveal"><summary>Quanto custa um projeto de interiores?</summary><p>O valor depende da metragem, da quantidade de ambientes e do plano escolhido. Por isso o orçamento é feito sob medida: chame no WhatsApp, conte sobre o seu espaço e receba a proposta sem compromisso.</p></details>
-      <details class="faq-item reveal"><summary>Em quanto tempo o projeto fica pronto?</summary><p>O prazo varia conforme o plano e o tamanho do espaço. Ele é combinado com você na proposta, antes de qualquer contratação.</p></details>
-      <details class="faq-item reveal"><summary>Qual plano é o ideal para mim?</summary><p>Para o projeto completo, com nossa equipe cuidando dos orçamentos e acompanhando a obra, o Premium. Se você prefere orçar com seus próprios fornecedores, o Plus. Para resolver um cômodo, com ou sem reforma, o Interiores Express. E se só precisa da imagem realista, o Render 3D. Na dúvida, conte seu caso no WhatsApp e indicamos o melhor caminho.</p></details>
-      <details class="faq-item reveal"><summary>Vocês atendem fora de São Paulo?</summary><p>O atendimento é em São Paulo e região. Se você está em outra localidade, chame no WhatsApp que avaliamos o seu caso.</p></details>
-    </div>
-    <div class="faq-cta reveal"><a class="btn btn-primary" href="https://wa.me/5511959364993?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20projeto." target="_blank" rel="noopener">Ainda tem dúvida? Fale com a gente</a></div>
-  </div>
-</section>
 
 <section class="section contact-sec" id="contato">
   <div class="wrap contact">
@@ -427,7 +397,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass)}
     </div>
     <div>
       <div class="foot-title">Navegação</div>
-      <nav class="foot-list"><a href="#sobre">Sobre</a><a href="#planos">Planos</a><a href="#portfolio">Projetos</a><a href="#processo">Como funciona</a><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a></nav>
+      <nav class="foot-list"><a href="#sobre">Sobre</a><a href="#planos">Planos</a><a href="#portfolio">Projetos</a><a href="#processo">Como funciona</a><a href="#contato">Contato</a></nav>
     </div>
     <div>
       <div class="foot-title">Contato</div>
