@@ -205,7 +205,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass)}
 
   /* Métricas de destaque da seção Sobre */
   .about-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:38px;padding:10px 0;background:var(--cream);border:1px solid rgba(34,31,27,.12);border-radius:8px;box-shadow:0 12px 28px rgba(34,31,27,.06)}
-  .metric{display:flex;flex-direction:column;gap:5px;padding:18px 24px 18px 0;min-height:118px}
+  .metric{display:flex;flex-direction:column;gap:5px;padding:18px 24px;min-height:118px}
   .metric:nth-child(odd){border-right:1px solid rgba(34,31,27,.14)}
   .metric:nth-child(n+3){border-top:1px solid rgba(34,31,27,.14)}
   .metric:nth-child(even){padding-left:24px}
@@ -214,6 +214,11 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass)}
   .metric>span{font-size:.82rem;line-height:1.45;color:var(--ink-soft);max-width:17ch}
   .vid-grid video,.vid-grid .vid-gif{width:100%;aspect-ratio:9/16;object-fit:cover;background:#17140f;border-radius:8px}
   @media(max-width:520px){.about-metrics{grid-template-columns:1fr}.metric,.metric:nth-child(even){padding-left:0;padding-right:0}.metric:nth-child(odd){border-right:0}.metric:nth-child(n+2){border-top:1px solid rgba(34,31,27,.14)}}
+
+  .metric{padding-left:28px;padding-right:28px}
+  .site-video.video-error{outline:1px solid rgba(169,90,55,.45);outline-offset:-1px}
+  .site-video.video-error::after{content:'Vídeo indisponível neste formato ou caminho';display:block;color:var(--stone);font-size:.75rem;text-align:center;padding:8px}
+  @media(max-width:520px){.metric,.metric:nth-child(even){padding-left:24px;padding-right:24px}}
 </style>
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 <!-- Quando o domínio final estiver definido, adicionar aqui: <link rel="canonical" href="https://SEU-DOMINIO/"> -->
@@ -338,10 +343,10 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass)}
       <p class="sec-lead">Passeios pelos ambientes e bastidores dos projetos da Esteves Interiores.</p>
     </div>
     <div class="vid-grid">
-      <video class="reveal" controls preload="metadata" playsinline poster="assets/video-poster-1.svg" aria-label="Vídeo do projeto 1"><source src="videos/projeto01.mp4" type="video/mp4">Seu navegador não suporta vídeos HTML5.</video>
+      <video class="reveal site-video" controls preload="auto" playsinline poster="assets/video-poster-1.svg" aria-label="Vídeo do projeto 1" data-video-candidates="videos/projeto01.mp4|videos/projeto-01.mp4" src="videos/projeto01.mp4">Seu navegador não suporta vídeos HTML5.</video>
       <img class="reveal vid-gif" src="videos/projeto-2.gif" alt="Animação do projeto 2" loading="lazy">
       <video class="reveal" controls preload="metadata" playsinline poster="assets/video-poster-3.svg" aria-label="Vídeo do projeto 3"><source src="videos/projeto-3.mp4" type="video/mp4"><source src="videos/projeto-3.mov" type="video/quicktime">Seu navegador não suporta vídeos HTML5.</video>
-      <video class="reveal" controls preload="metadata" playsinline poster="assets/video-poster-4.svg" aria-label="Vídeo do projeto 4"><source src="videos/projeto-4.mp4" type="video/mp4">Seu navegador não suporta vídeos HTML5.</video>
+      <video class="reveal site-video" controls preload="auto" playsinline poster="assets/video-poster-4.svg" aria-label="Vídeo do projeto 4" data-video-candidates="videos/projeto-4.mp4|videos/projeto04.mp4" src="videos/projeto-4.mp4">Seu navegador não suporta vídeos HTML5.</video>
     </div>
   </div>
 </section>
@@ -466,6 +471,14 @@ document.onkeydown=e=>{if(!lb.classList.contains('open'))return;if(e.key==='Esca
 // Revelar ao rolar
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -50px 0px'});
 $$('.reveal').forEach(el=>io.observe(el));
+// Tenta nomes alternativos dos vídeos 1 e 4 e sinaliza falha de carregamento.
+$$('.site-video').forEach(video=>{
+  const candidates=(video.dataset.videoCandidates||'').split('|').filter(Boolean); let index=0;
+  video.addEventListener('error',()=>{
+    if(index < candidates.length-1){ index++; video.src=candidates[index]; video.load(); }
+    else video.classList.add('video-error');
+  });
+});
 // Formulário -> WhatsApp
 $('#contactForm').addEventListener('submit',e=>{e.preventDefault();
  const v=id=>$('#'+id).value.trim();
