@@ -194,6 +194,14 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass)}
   @media(max-width:640px){.brand-logo{width:154px;max-height:36px}.foot-brand-logo{width:210px}}
 
   .vid-grid > .vid-gif{width:100%;height:100%;min-height:360px;object-fit:cover;border-radius:var(--radius, 18px);background:#211e1a}
+
+  /* Galeria uniforme: todas as imagens ocupam exatamente o mesmo espaço */
+  .gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:48px}
+  .gallery figure{aspect-ratio:4/3;break-inside:initial;margin:0;position:relative;overflow:hidden;border-radius:6px;cursor:zoom-in}
+  .gallery img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+  .gallery figcaption{display:none}
+  @media(max-width:800px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(max-width:480px){.gallery{grid-template-columns:1fr}}
 </style>
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 <!-- Quando o domínio final estiver definido, adicionar aqui: <link rel="canonical" href="https://SEU-DOMINIO/"> -->
@@ -202,7 +210,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass)}
 
 <header>
   <div class="nav">
-    <a class="brand" href="#topo" aria-label="Esteves Interiores"><img class="brand-logo" src="logo-esteves-interiores.webp" alt="Esteves Interiores"></a>
+    <a class="brand" href="#topo" aria-label="Esteves Interiores"><img class="brand-logo" src="assets/logo-esteves-interiores.webp" alt="Esteves Interiores"></a>
     <nav class="nav-links" aria-label="Principal">
       <a href="#sobre">Sobre</a><a href="#planos">Planos</a><a href="#portfolio">Projetos</a><a href="#processo">Como funciona</a><a href="#contato">Contato</a>
     </nav>
@@ -294,12 +302,12 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass)}
       <p class="sec-lead">Clique em qualquer foto para ampliar.</p>
     </div>
     <div class="gallery" id="gallery">
-      <figure class="reveal" data-lb><img src="Fotos/projeto-01.webp" alt="Projeto de interiores residencial 01 da Esteves Interiores" loading="lazy" decoding="async"><figcaption>Projeto residencial 01</figcaption></figure>
-      <figure class="reveal" data-lb><img src="Fotos/projeto-02.webp" alt="Projeto de interiores residencial 02 da Esteves Interiores" loading="lazy" decoding="async"><figcaption>Projeto residencial 02</figcaption></figure>
-      <figure class="reveal" data-lb><img src="Fotos/projeto-03.webp" alt="Projeto de interiores residencial 03 da Esteves Interiores" loading="lazy" decoding="async"><figcaption>Projeto residencial 03</figcaption></figure>
-      <figure class="reveal" data-lb><img src="Fotos/projeto-04.webp" alt="Projeto de interiores residencial 04 da Esteves Interiores" loading="lazy" decoding="async"><figcaption>Projeto residencial 04</figcaption></figure>
-      <figure class="reveal" data-lb><img src="Fotos/projeto-05.webp" alt="Projeto de interiores residencial 05 da Esteves Interiores" loading="lazy" decoding="async"><figcaption>Projeto residencial 05</figcaption></figure>
-      <figure class="reveal" data-lb><img src="Fotos/projeto-06.webp" alt="Projeto de interiores residencial 06 da Esteves Interiores" loading="lazy" decoding="async"><figcaption>Projeto residencial 06</figcaption></figure>
+      <figure class="reveal" data-lb><img src="Fotos/projeto-01.webp" alt="Projeto de interiores residencial 01 da Esteves Interiores" loading="lazy" decoding="async"></figure>
+      <figure class="reveal" data-lb><img src="Fotos/projeto-02.webp" alt="Projeto de interiores residencial 02 da Esteves Interiores" loading="lazy" decoding="async"></figure>
+      <figure class="reveal" data-lb><img src="Fotos/projeto-03.webp" alt="Projeto de interiores residencial 03 da Esteves Interiores" loading="lazy" decoding="async"></figure>
+      <figure class="reveal" data-lb><img src="Fotos/projeto-04.webp" alt="Projeto de interiores residencial 04 da Esteves Interiores" loading="lazy" decoding="async"></figure>
+      <figure class="reveal" data-lb><img src="Fotos/projeto-05.webp" alt="Projeto de interiores residencial 05 da Esteves Interiores" loading="lazy" decoding="async"></figure>
+      <figure class="reveal" data-lb><img src="Fotos/projeto-06.webp" alt="Projeto de interiores residencial 06 da Esteves Interiores" loading="lazy" decoding="async"></figure>
     </div>
   </div>
 </section>
@@ -392,7 +400,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass)}
 <footer>
   <div class="wrap foot-grid">
     <div>
-      <div class="foot-brand"><img class="foot-brand-logo" src="logo-esteves-interiores.webp" alt="Esteves Interiores"></div>
+      <div class="foot-brand"><img class="foot-brand-logo" src="assets/logo-esteves-interiores.webp" alt="Esteves Interiores"></div>
       <p style="max-width:34ch">Design de interiores residenciais e imagens 3D realistas, para você aprovar cada detalhe antes da obra começar.</p>
     </div>
     <div>
