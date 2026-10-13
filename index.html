@@ -202,6 +202,18 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass)}
   .gallery figcaption{display:none}
   @media(max-width:800px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
   @media(max-width:480px){.gallery{grid-template-columns:1fr}}
+
+  /* Métricas de destaque da seção Sobre */
+  .about-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:38px;padding:10px 0;background:var(--cream);border:1px solid rgba(34,31,27,.12);border-radius:8px;box-shadow:0 12px 28px rgba(34,31,27,.06)}
+  .metric{display:flex;flex-direction:column;gap:5px;padding:18px 24px 18px 0;min-height:118px}
+  .metric:nth-child(odd){border-right:1px solid rgba(34,31,27,.14)}
+  .metric:nth-child(n+3){border-top:1px solid rgba(34,31,27,.14)}
+  .metric:nth-child(even){padding-left:24px}
+  .metric strong{font-family:'Fraunces',serif;font-size:2.35rem;line-height:1;color:var(--moss);font-weight:300;letter-spacing:-.04em}
+  .metric strong span{color:var(--clay)}
+  .metric>span{font-size:.82rem;line-height:1.45;color:var(--ink-soft);max-width:17ch}
+  .vid-grid video,.vid-grid .vid-gif{width:100%;aspect-ratio:9/16;object-fit:cover;background:#17140f;border-radius:8px}
+  @media(max-width:520px){.about-metrics{grid-template-columns:1fr}.metric,.metric:nth-child(even){padding-left:0;padding-right:0}.metric:nth-child(odd){border-right:0}.metric:nth-child(n+2){border-top:1px solid rgba(34,31,27,.14)}}
 </style>
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 <!-- Quando o domínio final estiver definido, adicionar aqui: <link rel="canonical" href="https://SEU-DOMINIO/"> -->
@@ -253,6 +265,12 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass)}
       <p>A Esteves Interiores une design de interiores e visualização 3D para que você veja e aprove cada acabamento, cor e móvel antes de qualquer martelada. É esse cuidado com o realismo que guia o trabalho de Pamela Esteves.</p>
       <p>Do apartamento compacto à casa completa, o processo é pensado para quem quer clareza: menos incerteza, mais decisão informada.</p>
       <ul class="chips"><li>Projetos autorais</li><li>Render 3D em cada proposta</li><li>Acompanhamento próximo</li></ul>
+      <div class="about-metrics" aria-label="Números da Esteves Interiores">
+        <div class="metric"><strong>70<span>+</span></strong><span>projetos publicados no portfólio</span></div>
+        <div class="metric"><strong>3D</strong><span>toda proposta com render realista</span></div>
+        <div class="metric"><strong>1:1</strong><span>acompanhamento próximo do cliente</span></div>
+        <div class="metric"><strong>360°</strong><span>apresentação imersiva do ambiente antes da obra</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -322,7 +340,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--brass)}
     <div class="vid-grid">
       <video class="reveal" controls preload="metadata" playsinline poster="assets/video-poster-1.svg" aria-label="Vídeo do projeto 1"><source src="videos/projeto01.mp4" type="video/mp4">Seu navegador não suporta vídeos HTML5.</video>
       <img class="reveal vid-gif" src="videos/projeto-2.gif" alt="Animação do projeto 2" loading="lazy">
-      <video class="reveal" controls preload="metadata" playsinline poster="assets/video-poster-3.svg" aria-label="Vídeo do projeto 3"><source src="videos/projeto-3.mov" type="video/quicktime">Seu navegador não suporta vídeos HTML5.</video>
+      <video class="reveal" controls preload="metadata" playsinline poster="assets/video-poster-3.svg" aria-label="Vídeo do projeto 3"><source src="videos/projeto-3.mp4" type="video/mp4"><source src="videos/projeto-3.mov" type="video/quicktime">Seu navegador não suporta vídeos HTML5.</video>
       <video class="reveal" controls preload="metadata" playsinline poster="assets/video-poster-4.svg" aria-label="Vídeo do projeto 4"><source src="videos/projeto-4.mp4" type="video/mp4">Seu navegador não suporta vídeos HTML5.</video>
     </div>
   </div>
